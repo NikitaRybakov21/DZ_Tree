@@ -11,4 +11,6 @@ public interface Tree<E extends Comparable<? super E>> {
     void display();
 
     void traverse(TraversMode mode);
+    boolean isBalanced(Node<E> node);
+    Node<E> getRoot();
 }
