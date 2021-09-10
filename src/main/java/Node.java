@@ -1,6 +1,7 @@
 
 public class Node<T extends Comparable<? super T>> {
 
+    //////////////////////
     private final T value;
     private Node<T> leftChild;
     private Node<T> rightChild;
@@ -40,5 +41,6 @@ public class Node<T extends Comparable<? super T>> {
     public boolean hasOnlyOneChild() {
         return (leftChild != null && rightChild == null) || (leftChild == null && rightChild != null);
     }
+    /////////////////////
 }
 
